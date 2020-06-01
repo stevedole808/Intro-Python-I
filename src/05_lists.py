@@ -23,7 +23,6 @@ print(x + y)
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
 y.append(99)
-y[1], y[2] = y[2], y[1]
 print(x + y)
 
 # Print the length of list x
@@ -31,7 +30,7 @@ print(x + y)
 print(len(x))
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
-multiplied_list = [element * 1000 for element in x]
+multiplied_list = [l * 1000 for l in x]
 print(multiplied_list)
 
 # Or

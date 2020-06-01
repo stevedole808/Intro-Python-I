@@ -13,15 +13,20 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 with open("foo.txt") as file:
     print(file.read())
 
+# Or
+
+# fp stands for file pointer
+# with open("foo.text") as fp:
+#    for line in fp:
+#        print(line)
+
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
 # then close the file. Open up "bar.txt" and inspect it to make
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
-with open("bar.txt", "w") as file:
-    text = "Hi, \n how are you \n today"
-    file.write(text)
 
-with open("bar.txt") as file:
-    print(file.read())
+fp = open("bar.txt", "w")
+p.write("""Line 1 \n Line 2 \n Line 3 """)
+fp.close    
